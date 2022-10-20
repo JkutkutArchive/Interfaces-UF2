@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane
+      maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="400.0" prefWidth="600.0"
+      xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="dam.interfaces.uf2_vboxbtn.VBoxBtnController">
+   <children>
+      <VBox id="vbox"
+            layoutX="150.0" layoutY="50.0"
+            prefHeight="300.0" prefWidth="300.0"
+            style="-fx-padding: 10; -fx-border-style: solid inside; -fx-border-width: 2; -fx-border-insets: 5; -fx-border-radius: 5; -fx-border-color: blue;">
+         <children>
+            <Label text="Please insert your input here:" />
+            <TextField fx:id="txtfInput" onMouseClicked="#onBtnOkClick" text=""/>
+            <Button fx:id="btnOk" mnemonicParsing="false" onMouseClicked="#onBtnOkClick" text="Ok" />
+            <Label text="Your output:" />
+            <TextArea fx:id="txtaOutput" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
